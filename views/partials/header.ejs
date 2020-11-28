@@ -4,7 +4,7 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title><%= locals.title || "Express OpenID Connect" %></title>
+  <title>Sitio Adminitrativo Moneda Aunar</title>
 
 <!--Bootstrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -215,38 +215,18 @@ background: linear-gradient(to top, #1d2d51, #1d2d51, #1d2d51); /* W3C, IE 10+/ 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Inicio  <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
           </li>
-          <% if (locals.user) { %>
-            <li class="nav-item">
-              <a href="/profile" class="nav-link">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a href="/logout" class="nav-link">Logout</a>
-            </li>
-          <% } else { %>
-            <li class="nav-item">
-              <a href="/login" class="nav-link">Login</a>
-            </li>
-          <% } %>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Otras opciones
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Preguntas Frecuentes</a>
-              <a class="dropdown-item" href="#">Contacto</a>
-            </div>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Crear Actividad<span class="sr-only">(current)</span></a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Crear Actividad<span class="sr-only">(current)</span></a>
+          </li>
+         
         </ul>
       </div>
-      <div class="d-flex flex-row-reverse">
-        <% if (locals.isAuthenticated) { %>
-          <div class="p-2" style="color:#c9c9c9"> <p>Se encuentra conectado <a href="/profile">Ver Perfil</a>.</p></div>
-      <% } else { %>
-        <div class="p-2" style="color:#c9c9c9"><p>No se encuentra conectado. <a href="/login">Login</a>.</p></div>
-      <% } %>
-      </div>
+     
   </nav>
 
   <div id="carouselExampleControls" class="carousel slide" style="padding-top: 80px;" data-ride="carousel">
