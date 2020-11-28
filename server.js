@@ -1,11 +1,8 @@
-// const dotenv = require('dotenv');
 const express = require('express');
 const http = require('http');
 const logger = require('morgan');
 const path = require('path');
 const app = express();
-
-
 const router = express.Router();
 
 //importar las rutas:
@@ -27,5 +24,5 @@ app.set('view engine', 'ejs');
 app.use('/', indexRoutes);
 
 app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
+  console.log(`Servidor corriendo en http://localhost:${port}`);
 });

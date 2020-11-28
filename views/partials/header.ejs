@@ -1,241 +1,286 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-gray-200">
+
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Sitio Adminitrativo Moneda Aunar</title>
 
-<!--Bootstrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--/Bootstrap-->
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--/Bootstrap-->
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="shortcut icon" href="https://1.bp.blogspot.com/-SonbamLYRaI/Xcm3JKeyIbI/AAAAAAAAKEA/DZwSE2oYcT40FaBDDzq6qmqT0aer4-_KwCLcBGAsYHQ/s200/007.logo-aunar.png">
+  <link rel="shortcut icon"
+    href="https://1.bp.blogspot.com/-SonbamLYRaI/Xcm3JKeyIbI/AAAAAAAAKEA/DZwSE2oYcT40FaBDDzq6qmqT0aer4-_KwCLcBGAsYHQ/s200/007.logo-aunar.png">
 
 
-<style>
-  .navbar{
-    background-color:#1d2d51
-  }
-  .navbar a{
-    color:#ffffff;
-  }
-  .navbar a:hover {
+  <style>
+    .navbar {
+      background-color: #1d2d51
+    }
+
+    .navbar a {
+      color: #ffffff;
+    }
+
+    .navbar a:hover {
       color: #ebd369;
-  }
-  .dropdown-menu a{
-    color: #1d2d51;
-  }
-  .title{
-    color: #f9e547;
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 15px;
-  } 
-  .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  .custom-toggler.navbar-toggler {
-    border-color: #ffffff;
-  } 
-  .carousel-item {
-    height: 350px;
-  }
+    }
 
-  .carousel-item img {
+    .dropdown-menu a {
+      color: #1d2d51;
+    }
+
+    .title {
+      color: #f9e547;
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .custom-toggler.navbar-toggler {
+      border-color: #ffffff;
+    }
+
+    .carousel-item {
+      height: 350px;
+    }
+
+    .carousel-item img {
       position: absolute;
       top: 0;
       left: 0;
       min-height: 350px;
       object-fit: cover;
-  }
-  .points{
-    float: right;
-  }
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: #f9e547;
-    text-align: center;
-  }
+    }
+
+    .points {
+      float: right;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #f9e547;
+      text-align: center;
+    }
 
 
 
 
-/*Profile2 */
+    /*Profile2 */
 
-.user-card-full .user-profile {
-    border-radius: 5px 0 0 5px;
-    
-}
+    .user-card-full .user-profile {
+      border-radius: 5px 0 0 5px;
 
-.bg-c-lite-green {
-  background: #000428;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
 
-}
+    .bg-c-lite-green {
+      background: #000428;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #004e92, #000428);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #004e92, #000428);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.img-radius {
-    border-radius: 45px;
-}
+    }
 
-
-.card-block {
-    padding: 5em;
-}
-
-.card .card-block p {
-    line-height: 125px
-}
-
-.dimenciones{
-  padding:35px;
-  
-}
-.Nombre{
-  padding: 23px;
-  font-size: 20px;
-}
-.Carrera{
-  font-size: 17px;
-}
+    .img-radius {
+      border-radius: 45px;
+    }
 
 
+    .card-block {
+      padding: 5em;
+    }
 
+    .card .card-block p {
+      line-height: 125px
+    }
 
+    .dimenciones {
+      padding: 35px;
 
-.user-profile {
-    padding: 20px 0
-}
+    }
 
-.card-block {
-    padding: 1.25rem
-}
+    .Nombre {
+      padding: 23px;
+      font-size: 20px;
+    }
+
+    .Carrera {
+      font-size: 17px;
+    }
 
 
 
-.card-block {
-    padding: 1.25rem
-}
 
-.b-b-default {
-    border-bottom: 1px solid #e0e0e0
-}
 
-.m-b-20 {
-    margin-bottom: 20px
-}
+    .user-profile {
+      padding: 20px 0
+    }
 
-.p-b-5 {
-    padding-bottom: 5px !important
-}
+    .card-block {
+      padding: 1.25rem
+    }
 
-.card .card-block p {
-    line-height: 25px
-}
 
-.m-b-10 {
-    margin-bottom: 10px
-}
-.user-card-full{
-  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.253);
-}
 
-.table{
-  margin-left: 23px; 
-  width: 95.6%;
+    .card-block {
+      padding: 1.25rem
+    }
 
-  border-radius: 9px 9px 9px 9px;
-  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.253);
-}
-table{
-  border-radius: 9px 9px 9px 9px;
-}
+    .b-b-default {
+      border-bottom: 1px solid #e0e0e0
+    }
 
-.headtable{
-  background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #1d2d51, #1d2d51, #1d2d51);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #1d2d51, #1d2d51, #1d2d51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    .m-b-20 {
+      margin-bottom: 20px
+    }
 
-.headtable tr{
-  color: #ffffff;
-}
+    .p-b-5 {
+      padding-bottom: 5px !important
+    }
 
-.progress{
-  margin-left: 10em;
-  margin-top: -4em;
-  width: 83.6%;
-}
-.progress-bar{
-  background-color: #1d2d51;
-}
+    .card .card-block p {
+      line-height: 25px
+    }
 
-.monedalogo{
-  width: 4%;
-  height: 4%;
-  margin-left: 78.5em;
-  margin-top: -2.2em;
-  float: left;
-}
-.card p {
-  max-height: 5rem;
-  overflow: hidden;
-  text-align: justify;
-  padding: 0 1rem;
-  display: block;
-}
-.card p:hover {
-  max-height: none;
-}
-</style>
+    .m-b-10 {
+      margin-bottom: 10px
+    }
+
+    .user-card-full {
+      box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.253);
+    }
+
+    .table {
+      margin-left: 23px;
+      width: 95.6%;
+
+      border-radius: 9px 9px 9px 9px;
+      box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.253);
+    }
+
+    table {
+      border-radius: 9px 9px 9px 9px;
+    }
+
+    .headtable {
+      background: #0f0c29;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #1d2d51, #1d2d51, #1d2d51);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #1d2d51, #1d2d51, #1d2d51);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .headtable tr {
+      color: #ffffff;
+    }
+
+    .progress {
+      margin-left: 10em;
+      margin-top: -4em;
+      width: 83.6%;
+    }
+
+    .progress-bar {
+      background-color: #1d2d51;
+    }
+
+    .monedalogo {
+      width: 4%;
+      height: 4%;
+      margin-left: 78.5em;
+      margin-top: -2.2em;
+      float: left;
+    }
+
+    .card p {
+      max-height: 5rem;
+      overflow: hidden;
+      text-align: justify;
+      padding: 0 1rem;
+      display: block;
+    }
+
+    .card p:hover {
+      max-height: none;
+    }
+  </style>
 
 </head>
+
 <body>
 
   <nav class="navbar navbar-expand-lg fixed-top ">
 
-    <a class="navbar-brand " href="/"> <svg style="fill:#ffffff;" width="49" height="54" viewBox="0 0 200 200"><path   d="M0 100v100h200V0H0v100zm196.8.2l.2 96.8H3v-96.3c0-53 .3-96.7.7-97 .3-.4 43.9-.6 96.7-.5l96.1.3.3 96.7z"/><path d="M25 100v75h150V25H25v75zm148 .5V174H27V27h146v73.5z"/><path d="M40.7 51.6c-.4.4-.7 4.9-.7 10 0 8.3.2 9.2 2 9.7 2 .5 2 1.4 2 34.4 0 31.7.1 34 2 37 1.8 3.1 5.7 5.9 6.7 5 .2-.3-.4-.8-1.4-1.1-1-.3-2.8-2.1-4-3.9-2.3-3.3-2.3-3.7-2.3-37.6 0-33.7 0-34.3-2-34.8-1.9-.5-2.1-1.2-1.8-9.2l.3-8.6h35l.3 37.2.2 37.3h6c3.3 0 6-.3 6-.8 0-.4-2.5-.5-5.5-.4l-5.5.4-.2-37.4-.3-37.3-18.1-.3c-9.9-.1-18.3.1-18.7.4z"/><path d="M129 63.2l-.1 12.3L126 70c-3.9-7.4-3.8-5.9.3 2.6l3.2 6.9.5-13.5.5-13.5h13.8c8.5 0 13.7.4 13.7 1s-3.3 1.1-7.8 1.1l-7.7.2-.3 26.6c-.1 14.6-.6 26.6-1 26.5-.4 0-6.5-11.7-13.7-26-7.1-14.4-13.3-26.3-13.8-26.6-.4-.2-4.6-.5-9.2-.6l-8.4-.2-.3 6.8-.3 6.7h5.5v64H73V93.4l.1-38.6H53.5l-.3 6.6c-.2 5.3 0 6.6 1.2 6.6 1.3 0 1.5 4.7 1.8 35.2.3 31.7.5 35.6 2.1 38.6 1 1.8 3 3.8 4.5 4.5 2.5 1.1 2.3 1.2-3.3 1.8-3.3.3 8.1.6 25.3.7l31.2.2v-6.5c0-6.5 0-6.5 2.8-6.5 2.6 0 3.1.6 5.3 6.3l2.4 6.2 16.8.3 16.7.2-.2-48.7-.3-48.8-15.2-.3-15.3-.3v12.3zm-7.7 39.1c4.8 11.1 8.7 20.5 8.7 20.9 0 .5-2.7.8-6 .8-5.4 0-6.1-.2-7.5-2.8-1.3-2.2-1.5-2.3-1-.5.5 1.9.2 2.3-1.4 2.3-1.8 0-2.1-.6-2.1-4.8.1-4.6.1-4.6 1.5-2.2.8 1.4 1.4 2.1 1.5 1.7 0-.5-.6-1.8-1.2-3-1.3-2.1-2.9-32.7-1.8-32.7.3 0 4.4 9.2 9.3 20.3z"></path></svg></a>
-      <span class="title">Moneda Aunar</span>
+    <a class="navbar-brand " href="/"> <svg style="fill:#ffffff;" width="49" height="54" viewBox="0 0 200 200">
+        <path
+          d="M0 100v100h200V0H0v100zm196.8.2l.2 96.8H3v-96.3c0-53 .3-96.7.7-97 .3-.4 43.9-.6 96.7-.5l96.1.3.3 96.7z" />
+        <path d="M25 100v75h150V25H25v75zm148 .5V174H27V27h146v73.5z" />
+        <path
+          d="M40.7 51.6c-.4.4-.7 4.9-.7 10 0 8.3.2 9.2 2 9.7 2 .5 2 1.4 2 34.4 0 31.7.1 34 2 37 1.8 3.1 5.7 5.9 6.7 5 .2-.3-.4-.8-1.4-1.1-1-.3-2.8-2.1-4-3.9-2.3-3.3-2.3-3.7-2.3-37.6 0-33.7 0-34.3-2-34.8-1.9-.5-2.1-1.2-1.8-9.2l.3-8.6h35l.3 37.2.2 37.3h6c3.3 0 6-.3 6-.8 0-.4-2.5-.5-5.5-.4l-5.5.4-.2-37.4-.3-37.3-18.1-.3c-9.9-.1-18.3.1-18.7.4z" />
+        <path
+          d="M129 63.2l-.1 12.3L126 70c-3.9-7.4-3.8-5.9.3 2.6l3.2 6.9.5-13.5.5-13.5h13.8c8.5 0 13.7.4 13.7 1s-3.3 1.1-7.8 1.1l-7.7.2-.3 26.6c-.1 14.6-.6 26.6-1 26.5-.4 0-6.5-11.7-13.7-26-7.1-14.4-13.3-26.3-13.8-26.6-.4-.2-4.6-.5-9.2-.6l-8.4-.2-.3 6.8-.3 6.7h5.5v64H73V93.4l.1-38.6H53.5l-.3 6.6c-.2 5.3 0 6.6 1.2 6.6 1.3 0 1.5 4.7 1.8 35.2.3 31.7.5 35.6 2.1 38.6 1 1.8 3 3.8 4.5 4.5 2.5 1.1 2.3 1.2-3.3 1.8-3.3.3 8.1.6 25.3.7l31.2.2v-6.5c0-6.5 0-6.5 2.8-6.5 2.6 0 3.1.6 5.3 6.3l2.4 6.2 16.8.3 16.7.2-.2-48.7-.3-48.8-15.2-.3-15.3-.3v12.3zm-7.7 39.1c4.8 11.1 8.7 20.5 8.7 20.9 0 .5-2.7.8-6 .8-5.4 0-6.1-.2-7.5-2.8-1.3-2.2-1.5-2.3-1-.5.5 1.9.2 2.3-1.4 2.3-1.8 0-2.1-.6-2.1-4.8.1-4.6.1-4.6 1.5-2.2.8 1.4 1.4 2.1 1.5 1.7 0-.5-.6-1.8-1.2-3-1.3-2.1-2.9-32.7-1.8-32.7.3 0 4.4 9.2 9.3 20.3z">
+        </path>
+      </svg></a>
+    <span class="title">Moneda Aunar</span>
 
-      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/registro">Crear Actividad<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/borrar">Borrar Actividad<span class="sr-only">(current)</span></a>
-          </li>
-         
-        </ul>
-      </div>
-     
+    <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/registro">Crear Actividad<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/borrar">Borrar Actividad<span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+    </div>
+
   </nav>
 
   <div id="carouselExampleControls" class="carousel slide" style="padding-top: 80px;" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        
+
         <img class="d-block w-100" src="bannerMoneda.png" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="https://aunarvillavicencio.edu.co/wp-content/uploads/2020/10/BANNERBIENESTARINSTITUCIONAL.png" alt="Second slide">
+        <img class="d-block w-100"
+          src="https://aunarvillavicencio.edu.co/wp-content/uploads/2020/10/BANNERBIENESTARINSTITUCIONAL.png"
+          alt="Second slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

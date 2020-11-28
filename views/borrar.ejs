@@ -2,40 +2,33 @@
 
 <div class="container mt-4 align-items-center justify-content-center">
 
-
     <div class="row justify-content-md-center activities">
-        <h2>Seleccione actividad a eliminar:</h2>
+        <h2>Seleccionar actividad a eliminar:</h2>
+
         <table class="table">
             <caption class="text-center"></caption>
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>Descripción Actividad</th>
-                <th>Aunares</th>
-                <th>Acción</th>
-            </tr>
-        </thead>
-        <tbody>
-        <% for(let i=0; i< data.length;i++){ %>
-        <tr>
-            <td><%=  i + 1 %></td>
-            <td><%= data[i].desc_actividad %></td>
-            <td><%= data[i].puntos_actividad%></td>
-            
-            <td><a href="/borrar/<%= data[i].id_actividad %>" class="btn btn-danger">Borrar</a></td>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Descripción Actividad</th>
+                    <th>Aunares</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let i=0; i< data.length;i++){ %>
+                <tr>
+                    <td><%=  i + 1 %></td>
+                    <td><%= data[i].desc_actividad %></td>
+                    <td><%= data[i].puntos_actividad%></td>
 
-        </tr>
-<% } %>
-</tbody>
+                    <td><a href="/borrar/<%= data[i].id_actividad %>" class="btn btn-danger">Borrar</a></td>
+                </tr>
 
+                <% } %>
+            </tbody>
+
+    </div>
 </div>
-<br>
-<br>
-
-
-
-
-
-
 
 <%- include('partials/footer') -%>
