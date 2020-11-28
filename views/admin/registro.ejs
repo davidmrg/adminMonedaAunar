@@ -23,7 +23,7 @@
     <div class="form-group">
       <label for="exampleFormControlInput1">Inicio de la actividad</label>
       
-      <input size="16" type="text" class="form-control" id="datetime" readonly>
+      <input size="16" type="text" class="form-control" id="datepicker" readonly>
       
       <script type="text/javascript">
         $("#datetime").datetimepicker({
@@ -77,6 +77,16 @@
 
 <br><br>
 
+ 
+<script>
+  $( function() {
+ $( "#datepicker" ).datepicker({
+   format: "dd/mm/yyyy",
+   numberOfMonths: 1,
+   showButtonPanel: false
+ });
+} );
+     </script>
 
 
 <%- include('../partials/footer') -%>
