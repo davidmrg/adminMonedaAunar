@@ -11,7 +11,7 @@ const router = express.Router();
 //importar las rutas:
 const indexRoutes = require('./routes/index');
 
-// acceso a vars de entorno global para poder recibir el puerto que el proveedor conceda.
+// acceso a vars de entorno global para poder recibir el puerto que heroku conceda.
 const port = process.env.PORT || 3000;
 
 // middleware:
