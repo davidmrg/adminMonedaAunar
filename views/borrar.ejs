@@ -5,6 +5,28 @@
     <div class="row justify-content-md-center activities">
         <h2>Seleccionar actividad a eliminar:</h2>
 
+
+        <script>
+    function alerta(){
+    Swal.fire({
+  title: 'Desea elimar está actividad?',
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Aceptar'
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      'Eleminado!',
+      'Se a eliminado la actividad correctamente',
+      'success'
+    )
+  }
+}) }
+        </script>
+    
+
         <table class="table">
             <caption class="text-center"></caption>
             <thead>
@@ -22,7 +44,9 @@
                     <td><%= data[i].desc_actividad %></td>
                     <td><%= data[i].puntos_actividad%></td>
 
-                    <td><a href="/borrar/<%= data[i].id_actividad %>" class="btn btn-danger">Borrar</a></td>
+                    <td><a href="/borrar/<%= data[i].id_actividad %>" class="btn btn-danger">Borrar</a>
+                        <button class="btn btn-danger" onclick="alerta()">Esto es una prueba</button>
+                    </td>
                 </tr>
 
                 <% } %>

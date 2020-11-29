@@ -8,14 +8,16 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="row justify-content-md-center activities">
         <% for(let i=0; i< data.length;i++){ %>
-        <div class="col-auto mb-3">
-            <div class="card" style="width: 18rem;">
+        <div class="col-auto mb-4 m-4 center">
+            <div class="card cajas  align-self-center" >
                 <div class="card-body">
-                    <h5><span class="badge badge-success points"><%= data[i].puntos_actividad%></span></h5>
-                    <h5 class="card-title" style="color: #1d2d51; font-weight: bolder;"><%= data[i].desc_actividad%></h5>
-                    <span class="text-secondary"><%= data[i].fecha_Actividad.toISOString().slice(0,10) %></span>
+                    <h5><span class="badge badge-success points">Aunares <%= data[i].puntos_actividad%></span></h5>
+                    <h5 class="card-title titulo-card" ><%= data[i].desc_actividad%></h5>
+                    <span class="text-secondary fecha"><%= data[i].fecha_Actividad.toISOString().slice(0,10) %></span>
                     <p class="card-text"><%= data[i].desc_actividad %></p>
-                    <a href="/registro" class="card-link"><i class="fa fa-plus" aria-hidden="true"></i>Editar</a>
+                    <div class="editar">
+                    <a href="/registro" class="card-link"><i class="fa fa-plus" aria-hidden="true"></i> Editar</a>
+                    </div>
                 </div>
             </div>
         </div>
